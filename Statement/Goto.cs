@@ -4,17 +4,17 @@ class Goto
 {
   static void Main()
   {
-    int[] args = new int[10];
+    int[] args = new int[5] { 100, 200, 300, 400, 500 };
     int i = 0;
 
     goto check;
 
-    loop;
+  loop:
 
-    Console.WriteLine(i++);
+    Console.WriteLine(args[i++]);
 
-    check;
-    
+  check:
+
     if (i < args.Length)
     {
       goto loop;
